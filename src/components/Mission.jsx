@@ -1,15 +1,60 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Ac from "../components/ac.jpeg"
+
+
+
 
 function Mission() {
   return (
-    <div>
-    <p>
-   <h1>Vision</h1> 
-Accra College of Education is committed to be the ultimate center of excellence for quality teacher education in Ghana.
+    <div className='Missionmain'>
+   
 
-<h1>Mission Statement</h1>
-To train and orient student-teachers to become competent professional teachers of high caliber for Basic schools in Ghana through quality teaching and learning, research and application of modern technologies.
-    </p>
+    
+    <Container>
+    <h1  className='header'>Mission And Vision</h1>
+    <Row>
+      <Col md={6}>
+      <Card className='cardvid'>
+      <img className='missionimg' src={Ac} alt='pic'/>
+      <Card.Body>
+        <Card.Text>
+        
+        <h1>Vision</h1> 
+        <h4>Accra College of Education is committed to be the ultimate center of excellence for quality teacher education in Ghana.</h4>
+        
+        <h1>Mission Statement</h1>
+        <h4>To train and orient student-teachers to become competent professional teachers of high caliber for Basic schools in Ghana through quality teaching and learning, research and application of modern technologies.</h4>
+           
+        </Card.Text>
+      </Card.Body>
+    </Card>
+     
+    </Col>
+      <Col md={6}>
+      <Card className='cardvid'>
+      <img className='missionimg' src={Ac} alt='pic'/>
+      <Card.Body>
+        <Card.Text>
+        
+        <h1>Vision</h1> 
+        <h4>Accra College of Education is committed to be the ultimate center of excellence for quality teacher education in Ghana.</h4>
+        
+        <h1>Mission Statement</h1>
+        <h4>To train and orient student-teachers to become competent professional teachers of high caliber for Basic schools in Ghana through quality teaching and learning, research and application of modern technologies.</h4>
+           
+        </Card.Text>
+      </Card.Body>
+    </Card>
+     
+    </Col>
+    </Row>
+    </Container>
+
+
     </div>
   )
 }

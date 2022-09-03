@@ -9,7 +9,7 @@ import ac from "./ac.jpeg"
 
 
 
-function CollapsibleExample() {
+function NavBB() {
   return (
     <>
     <div>
@@ -18,57 +18,103 @@ function CollapsibleExample() {
       <img className='phot App-logo2' src={ac}  alt="logo"/>
         <Navbar.Brand href="#home">
         <NavDropdown title="AcCE" id="collasible-nav-dropdown" >
-              <NavDropdown.Item href="/" > <h4>History</h4></NavDropdown.Item>
+              <NavDropdown.Item href="/history" > <h4>History</h4></NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.2">
-              <h4>Vision</h4>
-              </NavDropdown.Item>
+   
+              
+              <NavDropdown.Item href="/mission"><h4>Mission & Mission</h4></NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.3"><h4>Mission</h4></NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="https://goo.gl/maps/NokvyaK4uKFK6gsV8">
                <h4>Location</h4>
               </NavDropdown.Item>
             </NavDropdown>
+
+
+
+
+
+            
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            
-            <Nav.Link href="#pricing"><h4>Admission</h4></Nav.Link>
-            <Nav.Link href="#pricing"><h4>Announcement</h4></Nav.Link>
-            <NavDropdown title="Primary Education" id="collasible-nav-dropdown">
+          <Nav className="me-auto" >
           
-              
-              <NavDropdown.Item href="#action/3.2">
-                <h4>Programs</h4>
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.3"><h4>Lecture Notes</h4></NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                <h4>Students Result</h4>
-              </NavDropdown.Item>
-            </NavDropdown>
+          
+          
           </Nav>
           <Nav>
-          <NavDropdown title="JHS Education" id="collasible-nav-dropdown" >
-          <NavDropdown.Item href="#action/3.1" > <h4>Programs</h4></NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.2">
+          <NavDropdown title="ADMISSION " id="collasible-nav-dropdown" >
+         
+          <NavDropdown.Item href="/admission">
+          <h4>Admission Requirement</h4>
+         </NavDropdown.Item>
+         
+        </NavDropdown>
+            
+          </Nav>
+          <Nav>
+          <NavDropdown title="ANNOUNCEMENT " id="collasible-nav-dropdown" >
+         
+          <NavDropdown.Item href="/Announcement">
+          <h4>Announcement</h4>
+         </NavDropdown.Item>
+        </NavDropdown>
+            
+          </Nav>
+          <Nav>
+          <NavDropdown title="PRIMARY EDUCATION " id="collasible-nav-dropdown" >
+         
+          <NavDropdown.Item href="/Announcement">
+          <h4>Course Combinations</h4>
+         </NavDropdown.Item>
+         <NavDropdown.Divider />
+          <NavDropdown.Item href="/lecturenotes">
           <h4>Lecture Notes</h4>
           </NavDropdown.Item>
             <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">
+          <NavDropdown.Item href="https://studentioe.ucc.edu.gh/login.php">
            <h4>Students Results</h4>
           </NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">
-           <h4>Course Combinations</h4>
+          
+          
+        </NavDropdown>
+            
+          </Nav>
+          <Nav>
+          <NavDropdown title="EARLY CHILDHOOD " id="collasible-nav-dropdown" >
+         
+          <NavDropdown.Item href="/Announcement">
+          <h4>Course Combinations</h4>
+         </NavDropdown.Item>
+         <NavDropdown.Divider />
+          <NavDropdown.Item href="/lecturenotes">
+          <h4>Lecture Notes</h4>
           </NavDropdown.Item>
+            <NavDropdown.Divider />
+          <NavDropdown.Item href="/result">
+           <h4>Students Results</h4>
+          </NavDropdown.Item>
+          
+          
+        </NavDropdown>
+            
+          </Nav>
+          <Nav>
+          <NavDropdown title="JHS EDUCATION" id="collasible-nav-dropdown" >
+          <NavDropdown.Item href="/Announcement" > <h4>Course Combination</h4></NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="/lecturenotes">
+          <h4>Lecture Notes</h4>
+          </NavDropdown.Item>
+            <NavDropdown.Divider />
+          <NavDropdown.Item href="https://studentioe.ucc.edu.gh/login.php">
+           <h4>Students Results</h4>
+          </NavDropdown.Item>
+         
+          
         </NavDropdown>
             <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+              JOURNAL
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -82,4 +128,4 @@ function CollapsibleExample() {
   );
 }
 
-export default CollapsibleExample;
+export default NavBB;
